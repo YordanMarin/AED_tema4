@@ -1,0 +1,20 @@
+package semana_04;
+
+public class Libreria {
+
+	public String eliminarEspacio(String dato) {
+		return dato.trim();
+	}
+	
+	public int longitudSinAjuste(String dato) {
+		return dato.length();
+	}
+	
+	public char primerCaracter(String d) {
+		return d.charAt(0);
+	}
+	
+	public char ultimoCaracter(String d) {
+		return d.charAt(longitudSinAjuste(d)-1);
+	}
+}

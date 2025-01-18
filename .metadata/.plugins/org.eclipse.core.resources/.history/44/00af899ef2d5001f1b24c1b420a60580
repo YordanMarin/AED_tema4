@@ -1,0 +1,12 @@
+package semana_04;
+
+public class Libreria {
+
+	public String eliminarEspacio(String dato) {
+		return dato.trim();
+	}
+	
+	public int longitudSinAjuste(String dato) {
+		return dato.length();
+	}
+}

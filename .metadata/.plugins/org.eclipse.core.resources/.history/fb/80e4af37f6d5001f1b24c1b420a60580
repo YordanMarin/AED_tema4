@@ -4,7 +4,6 @@ import javax.swing.*;
 
 import semana_04.Libreria;
 
-import java.awt.Font;
 import java.awt.event.*;
 
 public class Formulario {
@@ -42,7 +41,6 @@ public class Formulario {
 		
 		//area
 		JTextArea area = new JTextArea();
-		area.setFont(new Font("Monospaced", Font.PLAIN,13));
 		scroll.setViewportView(area);
 		
 		//boton
@@ -52,16 +50,16 @@ public class Formulario {
 		
 		btnProcesar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String dato = txtDato.getText().trim();
+				String dato = txtDato.getText();
 				Libreria l = new Libreria();
 				
 				if(!dato.isEmpty()) {
 					area.append( "Ingreso de texto valido  :"+l.eliminarEspacio(dato)+"\n");
 					area.append( "Longitud de texto valido :"+l.longitudSinAjuste(dato)+"\n");
-					area.append( "Primer caracter          :"+l.primerCaracter(dato)+"\n");
-					area.append( "ultimo caracter          :"+l.ultimoCaracter(dato)+"\n");
+					area.append( "Primer caracter          :"+l.primerCaracter(dato.trim())+"\n");
+					area.append( "ultimo caracter          :"+l.ultimoCaracter(dato.trim())+"\n");
 					area.append( "\n");
-					area.append( "Texto ajustado           :"+l.textoAjustado(dato)+"\n");
+					area.append( "Texto ajustado           :"+"\n");
 					
 					
 				}else {

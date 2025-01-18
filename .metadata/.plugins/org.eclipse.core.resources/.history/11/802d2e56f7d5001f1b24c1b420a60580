@@ -42,7 +42,7 @@ public class Formulario {
 		
 		//area
 		JTextArea area = new JTextArea();
-		area.setFont(new Font("Monospaced", Font.PLAIN,13));
+		area.setFont(new Font("Arial", Font.PLAIN,13));
 		scroll.setViewportView(area);
 		
 		//boton

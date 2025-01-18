@@ -4,7 +4,6 @@ import javax.swing.*;
 
 import semana_04.Libreria;
 
-import java.awt.Font;
 import java.awt.event.*;
 
 public class Formulario {
@@ -42,7 +41,6 @@ public class Formulario {
 		
 		//area
 		JTextArea area = new JTextArea();
-		area.setFont(new Font("Monospaced", Font.PLAIN,13));
 		scroll.setViewportView(area);
 		
 		//boton
