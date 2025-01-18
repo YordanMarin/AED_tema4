@@ -1,7 +1,6 @@
 package interfaz;
 
 import javax.swing.*;
-import java.awt.event.*;
 
 public class Formulario {
 
@@ -45,20 +44,6 @@ public class Formulario {
 		JButton btnProcesar = new JButton("Procesar");
 		btnProcesar.setBounds(420,30,120,20);
 		panel.add(btnProcesar);
-		
-		btnProcesar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String dato = txtDato.getText();
-				
-				if(!dato.isEmpty()) {
-					area.append(dato +"\n");
-					txtDato.setText("");
-				}else {
-					JOptionPane.showMessageDialog(frame,"Caja de texto vacía", "Advertencia", JOptionPane.WARNING_MESSAGE);
-				}
-			}
-		});
-		
 		
 		frame.setVisible(true);
 	}
