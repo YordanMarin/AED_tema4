@@ -41,7 +41,7 @@ public class Formulario {
 		scroll.setViewportView(area);
 		
 		//boton
-		JButton btnProcesar = new JButton("Procesar");
+		JButton btnProcesar = new JButton();
 		btnProcesar.setBounds(420,30,120,20);
 		panel.add(btnProcesar);
 		

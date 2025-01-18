@@ -33,17 +33,8 @@ public class Formulario {
 		
 		//desplazamiento
 		JScrollPane scroll = new JScrollPane();
-		scroll.setBounds(20,70,390,400);
+		scroll.setBounds(20,70,20,20);
 		panel.add(scroll);
-		
-		//area
-		JTextArea area = new JTextArea();
-		scroll.setViewportView(area);
-		
-		//boton
-		JButton btnProcesar = new JButton("Procesar");
-		btnProcesar.setBounds(420,30,120,20);
-		panel.add(btnProcesar);
 		
 		frame.setVisible(true);
 	}

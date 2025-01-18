@@ -1,0 +1,28 @@
+package interfaz;
+
+import javax.swing.*;
+
+public class Formulario {
+
+	public static void main(String[] args) {
+		Formulario f = new Formulario();
+		f.ventana();
+
+	}
+	
+	public void ventana() {
+		//creando ventana
+		JFrame frame = new JFrame("Semana 4 - cadena de texto");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(600,600);
+		
+		
+		//crear panel
+		JPanel panel = new JPanel();
+		frame.setContentPane(panel);
+		panel.setLayout(null);
+		
+		frame.setVisible(true);
+	}
+
+}

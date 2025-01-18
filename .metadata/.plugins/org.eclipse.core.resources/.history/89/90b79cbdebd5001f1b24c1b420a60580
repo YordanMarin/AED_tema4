@@ -16,6 +16,7 @@ public class Formulario {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(600,600);
 		
+		
 		//crear panel
 		JPanel panel = new JPanel();
 		frame.setContentPane(panel);
@@ -30,20 +31,6 @@ public class Formulario {
 		JTextField txtDato = new JTextField();
 		txtDato.setBounds(110,30,300,20);
 		panel.add(txtDato);
-		
-		//desplazamiento
-		JScrollPane scroll = new JScrollPane();
-		scroll.setBounds(20,70,390,400);
-		panel.add(scroll);
-		
-		//area
-		JTextArea area = new JTextArea();
-		scroll.setViewportView(area);
-		
-		//boton
-		JButton btnProcesar = new JButton("Procesar");
-		btnProcesar.setBounds(420,30,120,20);
-		panel.add(btnProcesar);
 		
 		frame.setVisible(true);
 	}
